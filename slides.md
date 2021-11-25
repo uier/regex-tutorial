@@ -1,10 +1,7 @@
 ---
-theme: geist
 highlighter: shiki
-layout: cover
+theme: default
 # lineNumbers: false
-font:
-  mono: Space Mono
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
