@@ -1,0 +1,7 @@
+:not(pre) > code {
+  @apply text-pink-500 text-3xl;
+}
+
+:not(pre) > code:before, :not(pre) > code:after {
+  content: "";
+}
