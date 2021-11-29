@@ -64,10 +64,12 @@ for each sid
 <!-- 
 Vocabulary
 
-pesudo code
-: a program code unrelated to the hardware of a particular computer
-  and requiring conversion to the code used by the computer before
-  the program can be used.
+- pesudo code
+  : a program code unrelated to the hardware of a particular computer
+    and requiring conversion to the code used by the computer before
+    the program can be used.
+  example:
+    The python code has 87% similarity of the pesudo code.
 -->
 
 ---
@@ -131,9 +133,13 @@ for each sid
 <!-- 
 Vocabulary
 
-refactor
-: restructure (the source code of an application or piece of software)
-  so as to improve operation without altering functionality.
+- refactor
+  : restructure (the source code of an application or piece of software)
+    so as to improve operation without altering functionality.
+  example:
+    Sometimes, developers prefer to rewrite from scratch rather than
+    refactor legacy code because they cannot even understand what they
+    just wrote 3 days ago.
 -->
 
 ---
@@ -147,9 +153,11 @@ refactor
 <!-- 
 Vocabulary
 
-compile
-: to change a computer program into a machine language.
-
+- compile
+  : to change a computer program into a machine language.
+  example:
+    Please don't compile the identical source code twice and except
+    the error will disappear. Go to fix your code!
 -->
 
 ---
