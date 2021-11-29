@@ -16,6 +16,8 @@
     "
     contenteditable="true"
     @keydown.stop=""
+    @keyup.stop=""
+    @keypress.stop=""
   ></div>
 </template>
 
@@ -95,7 +97,7 @@ export default {
       this.processHighlights()
     },
     htmlOutput() {
-      var selection = this.saveSelection(this.$el)
+      const selection = this.saveSelection(this.$el)
       this.$el.innerHTML = this.htmlOutput
       this.restoreSelection(this.$el, selection)
     },
@@ -275,7 +277,8 @@ export default {
     },
     // Copied from: https://stackoverflow.com/questions/5499078/fastest-method-to-escape-html-tags-as-html-entities
     safe_tags_replace(str) {
-      return str.replace(/[&<>]/g, this.replaceTag)
+      return str
+      // return str.replace(/[&<>]/g, this.replaceTag)
     },
     replaceTag(tag) {
       return tagsToReplace[tag] || tag
@@ -349,7 +352,7 @@ export default {
     },
     // Copied but modifed slightly from: https://stackoverflow.com/questions/14636218/jquery-convert-text-url-to-link-as-typing/14637351#14637351
     restoreSelection(containerEl, savedSel) {
-      if (!savedSel) return
+      if (!savedSel || (savedSel.start === 0 && savedSel.end === 0)) return
 
       if (window.getSelection && document.createRange) {
         var charIndex = 0,

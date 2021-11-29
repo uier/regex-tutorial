@@ -9,7 +9,7 @@ info: |
 
 # Regular Expression
 
-An essential, powerful string processing tool for programmers.
+An essential and powerful string processing tool for programmers.
 
 <br>
 <br>
@@ -19,7 +19,11 @@ presented by
 from Computer Science (CS)
 
 <!--
-Hi everyone
+Good morning. We are students from NTNU Department of Computer Science and Information Engineering.
+
+My name is 子緯, and our team member 博傑, 宗翰 and 宇呈.
+
+In this presentation, we're going to introduce A VERY VERY COOL thing, REGULAR EXPRESSION, An Essential and Powerful string processsing tool for programmers.
 -->
 
 ---
@@ -29,6 +33,7 @@ Hi everyone
 or Regex/RegExp/RE in short
 
 <Tweet class="h-50" id="1262408319282458625" />
+
 
 ---
 layout: center

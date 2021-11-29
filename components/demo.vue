@@ -11,13 +11,25 @@ export default {
   setup(props) {
     const pattern = ref(props.defaultPattern)
     const flags = ref(props.defaultFlags)
+    const isInvalidRegex = ref(false)
 
-    const regex = computed(() => (pattern.value ? new RegExp(pattern.value, flags.value) : ''))
+    const regex = computed(() => {
+      isInvalidRegex.value = false
+      if (!pattern.value) return ''
+      try {
+        return new RegExp(pattern.value, flags.value)
+      } catch (error) {
+        isInvalidRegex.value = true
+        console.log('Error occurred when construct RegExp:', error)
+        return ''
+      }
+    })
 
     return {
       pattern,
       flags,
       regex,
+      isInvalidRegex,
       defaultText: props.defaultText,
     }
   },
@@ -31,21 +43,10 @@ export default {
         <input
           id="pattern"
           v-model="pattern"
-          class="
-            mr-[25px]
-            shadow
-            appearance-none
-            border
-            rounded
-            w-[350px]
-            py-2
-            px-3
-            text-2xl text-teal-600
-            leading-tight
-            outline-none
-            focus:shadow-none focus:border-teal-500
-            transition-all
-          "
+          :class="[
+            'mr-[25px] shadow appearance-none border rounded w-[350px] py-2 px-3 text-2xl text-teal-600 leading-tight outline-none focus:shadow-none focus:border-teal-500 transition-all',
+            isInvalidRegex && 'border-red-500 focus:border-red-500',
+          ]"
           type="text"
         />
         <label for="pattern" class="absolute left-2 transition-all bg-white px-1"> Pattern </label>
