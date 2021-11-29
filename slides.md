@@ -42,8 +42,8 @@ image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg?auto=com
 
 # Imagine that...
 
-1. Senior student
-2. College of Science
+1. Senior student (ID begin with '407')
+2. College of Science (ID end with 'S')
 
 <br><br><br><br>
 
@@ -51,15 +51,14 @@ image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg?auto=com
 
 ---
 
-# Pseudo code
+# Pesudo code
 
-```
-valid = empty mapping
-for each sid
-  if (sid is begin with '407') and (end with 's' or end with 'S')
-    valid[sid] := yes
-  else
-    valid[sid] := no
+```python
+for each student_id in student_list:
+    if (student_id is begin with '407') and (student_id is end with 's' or end with 'S'):
+        # valid ID
+    else:
+        # invalid ID
 ```
 
 <br><br><br>
@@ -95,19 +94,37 @@ layout: image-right
 
 # Revised source code
 
-```
-valid = empty mapping
-for each sid
-  if ((sid is begin with '407') or (sid is begin with '408')) and
-    ((end with 's' or end with 'S') or (end with 'h' or end with 'H'))
-    valid[sid] := yes
-  else
-    valid[sid] := no
+```python
+for each student_id in student_list:
+    if ((student_id is begin with '407') or (student_id is begin with '408') and
+        ((student_id is end with 's' or end with 'S') or (student_id is end with 'h' or end with 'H'))):
+        # valid ID
+    else:
+        # invalid ID
 ```
 
 <br><br><br>
 
-<h3>Well...It looks a little more complicated.</h3>
+<h3>Well... It looks a little more complicated.</h3>
+
+---
+
+# The problems
+
+1. Engineers are lazy. We don't want to write similar code multiple times.
+2. Engineers are lazy. We don't want to read code written by others.
+3. Give user the ability to execute code is dangerous.
+4. You have to learn programming language first to achive advanced searching.
+
+<!-- 
+Vocabulary
+
+- compile
+  : to change a computer program into a machine language.
+  example:
+    Please don't compile the identical source code twice and except
+    the error will disappear. Go to fix your code!
+-->
 
 ---
 layout: cover
@@ -121,13 +138,12 @@ layout: cover
 
 # Refactor with regex
 
-```
-valid = empty mapping
-for each sid
-  if match sid with "40[78].*[sh]/i"
-    valid[sid] := yes
-  else
-    valid[sid] := no
+```python
+for each student_id in student_list:
+    if match student_id with "40[78].*[sh]/i":
+        # valid ID
+    else:
+        # invalid ID
 ```
 
 <br><br><br><br>
@@ -139,7 +155,7 @@ for each sid
 Vocabulary
 
 - refactor
-  : restructure (the source code of an application or piece of software)
+  : (verb) restructure the source code of an application or piece of software
     so as to improve operation without altering functionality.
   example:
     Sometimes, developers prefer to rewrite from scratch rather than
@@ -149,21 +165,52 @@ Vocabulary
 
 ---
 
-# Why regex?
+# What is regex ?
 
-1. We don't need to re-compile the program.
-2. Give user the ability to execute code is dangerous.
-3. Engineers are lazy. We don't want to write anything twice.
+- regex is a sequence of characters that specifies a search pattern.
+- regex patterns are commonly used by string-searching algorithms
+- e.g:
+	- "find" or "find and replace" operations
+	- input validation. 
 
-<!-- 
-Vocabulary
 
-- compile
-  : to change a computer program into a machine language.
-  example:
-    Please don't compile the identical source code twice and except
-    the error will disappear. Go to fix your code!
--->
+<div class="flex space-x-5 mt-20">
+  <img src="/images/regex-example-1.png" class="w-1/2">
+
+  <img src="/images/regex-example-2.png" class="w-1/2">
+</div>
+
+---
+
+# Where you can see it
+
+<div class="flex justify-around mt-20">
+  <img src="/images/regex-application-1.png" style="max-width: 120px">
+  <img src="/images/regex-application-2.png" style="max-width: 120px">
+</div>
+
+<div class="flex justify-around mt-20">
+  <img src="/images/regex-application-3.png" style="max-width: 120px">
+  <img src="/images/regex-application-4.png" style="max-width: 120px">
+  <img src="/images/regex-application-5.png" style="max-width: 120px">
+</div>
+
+---
+layout: image-right
+image: /images/regex-coolguy.png
+---
+
+# Why must be regex?
+
+- Clean (A pattern is worth a thousand codes)
+- Standard (widely used)
+- Be a Lifehacker!
+
+---
+
+
+# Syntax
+
 
 ---
 layout: center
