@@ -61,6 +61,15 @@ for each sid
 
 <h3>Look really simple, right?</h3>
 
+<!-- 
+Vocabulary
+
+pesudo code
+: a program code unrelated to the hardware of a particular computer
+  and requiring conversion to the code used by the computer before
+  the program can be used.
+-->
+
 ---
 layout: statement
 ---
@@ -118,6 +127,15 @@ for each sid
 
 <!-- Add some meme? -->
 
+
+<!-- 
+Vocabulary
+
+refactor
+: restructure (the source code of an application or piece of software)
+  so as to improve operation without altering functionality.
+-->
+
 ---
 
 # Why regex?
@@ -125,6 +143,14 @@ for each sid
 1. We don't need to re-compile the program.
 2. Give user the ability to execute code is dangerous.
 3. Engineers are lazy. We don't want to write anything twice.
+
+<!-- 
+Vocabulary
+
+compile
+: to change a computer program into a machine language.
+
+-->
 
 ---
 layout: center
