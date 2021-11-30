@@ -37,13 +37,13 @@ or Regex/RegExp/RE in short
 
 ---
 layout: image-right
-image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+image: ./images/student_list.png
 ---
 
 # Imagine that...
 
 1. Senior student (ID begin with '407')
-2. College of Science (ID end with 'S')
+2. College of Science (ID end with 'S' or 's')
 
 <br><br><br><br>
 
@@ -185,15 +185,33 @@ Vocabulary
 # Where you can see it
 
 <div class="flex justify-around mt-20">
-  <img src="/images/regex-application-1.png" style="max-width: 120px">
-  <img src="/images/regex-application-2.png" style="max-width: 120px">
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/images/icon_msword.png" class="w-20">
+    <div class="text-xl">MS Word</div>
+  </div>
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/images/icon_msexcel.png" class="w-20">
+    <div class="text-xl">MS Excel</div>
+  </div>
 </div>
 
 <div class="flex justify-around mt-20">
-  <img src="/images/regex-application-3.png" style="max-width: 120px">
-  <img src="/images/regex-application-4.png" style="max-width: 120px">
-  <img src="/images/regex-application-5.png" style="max-width: 120px">
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/images/icon_googledoc.png" class="w-20">
+    <div class="text-xl">Google Docs</div>
+  </div>
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/images/icon_googlesheet.png" class="w-20">
+    <div class="text-xl">Google Sheets</div>
+  </div>
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/images/icon_googleform.png" class="w-20">
+    <div class="text-xl">Google Form</div>
+  </div>
 </div>
+
+
+<div class="mt-12 text-xs">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> and <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 ---
 layout: image-right
