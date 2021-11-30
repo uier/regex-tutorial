@@ -1,10 +1,10 @@
 ---
 highlighter: shiki
 theme: default
-# lineNumbers: false
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
+title: Regular Expression
 ---
 
 # Regular Expression
@@ -28,12 +28,51 @@ In this presentation, we're going to introduce A VERY VERY COOL thing, REGULAR E
 
 ---
 
+# Vocabulary in article
+
+<br>
+
+### 1. program
+a series of instructions that can be put into a computer in order to make it perform an operation.
+
+<br>
+
+### 2. placeholder
+a symbol or piece of text that can be replaced by particular pieces of information, used in mathematical expression or computer instruction.
+
+<br>
+
+### 3. character
+a letter, number, or other symbol used in writing, especially in printed text or on a computer.
+
+---
+
 # Regular Expression
 
 or Regex/RegExp/RE in short
 
 <Tweet class="h-50" id="1262408319282458625" />
 
+---
+
+# Outline
+
+1. What is Regex? & Why Regex?
+2. The Syntax of Regex
+3. Regex Challenges!
+4. How does it work?
+
+<!--
+Firstly, we'll talk about what is regex? and why we need regex?
+
+Secondly, we'll introduce the syntax of regex
+
+Then, we'll have some challenges for you to exercise.
+
+Finally, we'll briefly explain how regex works.
+
+we'll also explain some technical term when needed.
+-->
 
 ---
 layout: image-right
@@ -63,15 +102,13 @@ for each student_id in student_list:
 
 <br><br><br>
 
-<h3>Look really simple, right?</h3>
+<h3>Looks really simple, right?</h3>
 
-<!-- 
+<!--
 Vocabulary
 
 - pesudo code
-  : a program code unrelated to the hardware of a particular computer
-    and requiring conversion to the code used by the computer before
-    the program can be used.
+  : In computer science, pseudocode is not a programming language, it is not a valid code. but it can describe an algorithm to others. it is just plain desciption which looks like code.  
   example:
     The python code has 87% similarity of the pesudo code.
 -->
@@ -113,8 +150,8 @@ for each student_id in student_list:
 
 1. Engineers are lazy. We don't want to write similar code multiple times.
 2. Engineers are lazy. We don't want to read code written by others.
-3. Give user the ability to execute code is dangerous.
-4. You have to learn programming language first to achive advanced searching.
+3. You have to be able to write programs before you can search.
+4. Give user the ability to execute code is dangerous.
 
 <!-- 
 Vocabulary
@@ -156,7 +193,7 @@ Vocabulary
 
 - refactor
   : (verb) restructure the source code of an application or piece of software
-    so as to improve operation without altering functionality.
+    so as to improve operation without altering functionality.  
   example:
     Sometimes, developers prefer to rewrite from scratch rather than
     refactor legacy code because they cannot even understand what they
@@ -176,7 +213,6 @@ Vocabulary
 
 <div class="flex space-x-5 mt-20">
   <img src="/images/regex-example-1.png" class="w-1/2">
-
   <img src="/images/regex-example-2.png" class="w-1/2">
 </div>
 
@@ -225,17 +261,38 @@ image: /images/regex-coolguy.png
 - Be a Lifehacker!
 
 ---
-
+layout: cover
+---
 
 # Syntax
 
+---
+layout: image-right
+image: https://hackmd.io/_uploads/HJCcHURdt.png
+---
+
+# Quick Start
+
+---
+
+# Spectial Characters
+- `\`: backward slash
+- `.`: dot
+- `+`: plus sign
+- `*`: asterisk (people love calling it star)
+- `?`: question mark
+- `|`: pipe
+- `()`: parentheses
+- `[]`: brackets
+- `{}`: braces
+- `^`: caret
 
 ---
 layout: center
 class: text-center
 ---
 
-# `|` logical OR
+# `|` **logical** OR
 
 <demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
 
@@ -322,4 +379,3 @@ class: text-center
 ---
 layout: end
 ---
-

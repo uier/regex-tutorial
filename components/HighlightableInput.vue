@@ -12,7 +12,7 @@
       leading-tight
       outline-none
       focus:shadow-none focus:border-teal-500
-      whitespace-pre
+      whitespace-pre-wrap
     "
     contenteditable="true"
     @keydown.stop=""
@@ -98,6 +98,7 @@ export default {
     },
     htmlOutput() {
       const selection = this.saveSelection(this.$el)
+      console.log(this.htmlOutput)
       this.$el.innerHTML = this.htmlOutput
       this.restoreSelection(this.$el, selection)
     },
@@ -118,7 +119,6 @@ export default {
         // this.$emit('input', this.internalValue)
         return
       }
-
       var intervalTree = new IntervalTree()
       // Find the position ranges of the text to highlight
       var highlightPositions = []
@@ -180,6 +180,7 @@ export default {
           this.safe_tags_replace(this.internalValue.substring(position.start, position.end + 1)) +
           '</span>'
         startingPosition = position.end + 1
+        // console.log(result)
       }
 
       // In case we exited the loop early
@@ -194,6 +195,7 @@ export default {
         result += '&nbsp;'
       }
 
+      // console.log(result)
       this.htmlOutput = result
       // this.$emit('input', this.internalValue)
     },
