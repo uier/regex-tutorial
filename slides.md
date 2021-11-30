@@ -292,9 +292,71 @@ layout: center
 class: text-center
 ---
 
-# `|` **logical** OR
+# Normal Search
 
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
+<demo defaultPattern="" defaultFlags="" defaultText="I have a fat cat called Matt as a pet. It caught a rat." />
+
+<!-- 
+let's match 'at' & add flag 'g' which means global, that is, match all occurence in text instead of only matching first one.
+ -->
+
+---
+layout: center
+class: text-center
+---
+
+# `.` dot
+Matches any single character.
+
+<demo defaultPattern="cap" defaultFlags="g" defaultText="I have a cap and a cup." />
+
+<!-- 
+then we can use dot to match any single character.
+for example, /c.p/ matches both 'cap' and 'cup'.
+ -->
+
+---
+layout: center
+class: text-center
+---
+
+# `[]` Character Class
+Matches any one of the enclosed characters
+
+<demo defaultPattern="" defaultFlags="" defaultText="I have a fat cat called Matt as a pet. It caught a rat that weight 20 grams." />
+
+<!-- 
+we can use character class to contain multiple characters
+like /[fcMr]at/
+and we can use range, such as a-z, A-Z, 0-9, 0-1
+also, in order to match dot, we need this [.]
+ -->
+
+---
+layout: center
+class: text-center
+---
+
+# `\` escaped
+##### `\d` match digit, equivalent to `[0-9]`  
+##### `\w` match alphanumeric character, equivalent to `[A-Za-z0-9_]`  
+##### `\s` match white space character
+
+<demo defaultPattern="\d" defaultFlags="g" defaultText="What is 24.0 \ 12.0 = ? " />
+
+<!-- 
+back slash means escape, what escape means is that the character after back slash is escaping from the original meaning
+for example, another way to match a dot is using escape \.
+ -->
+
+---
+layout: center
+class: text-center
+---
+
+# `|` logical OR
+
+<demo defaultPattern="" defaultFlags="g" :defaultText="'40747024s\n40847019S'" />
 
 ---
 layout: center
@@ -346,36 +408,7 @@ layout: center
 class: text-center
 ---
 
-# `\` escape special chars
-
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
-
----
-layout: center
-class: text-center
----
-
-# `[]` character sets
-
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
-
----
-layout: center
-class: text-center
----
-
 # `^` negation, do the opposite
 
 <demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
 
----
-
-# others
-- `\d`, `\D`
-- `\w`, `\W`
-- `\s`, `\S`
-- `\n`
-
----
-layout: end
----
