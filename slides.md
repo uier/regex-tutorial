@@ -81,8 +81,8 @@ image: ./images/student_list.png
 
 # Imagine that...
 
-1. Senior student (ID begin with '407')
-2. College of Science (ID end with 'S' or 's')
+1. Senior student (ID begins with '407')
+2. College of Science (ID ends with 'S' or 's')
 
 <br><br><br><br>
 
@@ -126,13 +126,13 @@ image: /images/trap-card.png
 
 # Trap Card ACTIVATED!
 
-1. Juinor students
-2. College of techonology and Engineering
+1. Juinor students (ID begins with '408')
+2. College of techonology and Engineering  
+  (ID ends with 'H' or 'h')
 
 <br><br><br>
 
-### So..we need to rewrite the code
-
+### So..we need to rewrite the code.
 
 ---
 
@@ -140,7 +140,7 @@ image: /images/trap-card.png
 
 ```python
 for each student_id in student_list:
-    if ((student_id is begin with '407') or (student_id is begin with '408') and
+    if (((student_id is begin with '407') or (student_id is begin with '408')) and
         ((student_id is end with 's' or end with 'S') or (student_id is end with 'h' or end with 'H'))):
         # valid ID
     else:
@@ -171,18 +171,16 @@ Vocabulary
 -->
 
 ---
-layout: cover
+layout: section
 ---
 
-<!-- Add a cover photo -->
-
 # Regex
+
+The life-saver of pattern matching
 
 ---
 
 # Refactor with regex
-
-<v-clicks>
 
 ```python
 for each student_id in student_list:
@@ -192,9 +190,11 @@ for each student_id in student_list:
         # invalid ID
 ```
 
+<v-clicks>
+
 ```python
 for each student_id in student_list:
-    if ((student_id is begin with '407') or (student_id is begin with '408') and
+    if (((student_id is begin with '407') or (student_id is begin with '408')) and
         ((student_id is end with 's' or end with 'S') or (student_id is end with 'h' or end with 'H'))):
         # valid ID
     else:
