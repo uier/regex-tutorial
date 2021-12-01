@@ -1,7 +1,17 @@
+:not(pre):not(li) > code {
+  @apply text-3xl;
+}
+
 :not(pre) > code {
-  @apply text-pink-500 text-3xl;
+  @apply text-pink-500 text-xl font-mono;
 }
 
 :not(pre) > code:before, :not(pre) > code:after {
   content: "";
+}
+
+li {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  white-space: pre;
 }

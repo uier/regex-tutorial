@@ -276,16 +276,16 @@ image: https://hackmd.io/_uploads/HJCcHURdt.png
 ---
 
 # Spectial Characters
-- `\`: backward slash
-- `.`: dot
-- `+`: plus sign
-- `*`: asterisk (people love calling it star)
-- `?`: question mark
-- `|`: pipe
-- `()`: parentheses
-- `[]`: brackets
-- `{}`: braces
-- `^`: caret
+- `. ` dot
+- `()` parentheses
+- `[]` brackets
+- `{}` braces
+- `\ ` backward slash, escape character
+- `+ ` plus sign
+- `* ` asterisk (people love calling it star)
+- `? ` question mark
+- `| ` pipe sign
+- `^ ` caret
 
 ---
 layout: center
@@ -342,7 +342,7 @@ class: text-center
 ##### `\w` match alphanumeric character, equivalent to `[A-Za-z0-9_]`  
 ##### `\s` match white space character
 
-<demo defaultPattern="\d" defaultFlags="g" defaultText="What is 24.0 \ 12.0 = ? " />
+<demo defaultPattern="\d" defaultFlags="g" :defaultText="'What is 24.0 \ 12.0 = ?\nIt\'s 2.\nCorrect!'" />
 
 <!-- 
 back slash means escape, what escape means is that the character after back slash is escaping from the original meaning
