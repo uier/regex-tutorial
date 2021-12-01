@@ -81,12 +81,12 @@ image: ./images/student_list.png
 
 # Imagine that...
 
-1. Senior student (ID begin with '407')
-2. College of Science (ID end with 'S' or 's')
+1. Senior student (ID begins with '407')
+2. College of Science (ID ends with 'S' or 's')
 
 <br><br><br><br>
 
-<h3>How will you do that?</h3>
+### How will you do that?
 
 ---
 
@@ -102,10 +102,10 @@ for each student_id in student_list:
 
 <br><br><br>
 
-<h3>Looks really simple, right?</h3>
+### Looks really simple, right?
 
 <!--
-Vocabulary
+Vocabulary  
 
 - pesudo code
   : In computer science, pseudocode is not a programming language, it is not a valid code. but it can describe an algorithm to others. it is just plain desciption which looks like code.  
@@ -121,11 +121,18 @@ layout: statement
 
 ---
 layout: image-right
+image: /images/trap-card.png
 ---
 
-<!-- 右邊要放陷阱卡的圖片 -->
-
 # Trap Card ACTIVATED!
+
+1. Juinor students (ID begins with '408')
+2. College of techonology and Engineering  
+  (ID ends with 'H' or 'h')
+
+<br><br><br>
+
+### So..we need to rewrite the code.
 
 ---
 
@@ -133,7 +140,7 @@ layout: image-right
 
 ```python
 for each student_id in student_list:
-    if ((student_id is begin with '407') or (student_id is begin with '408') and
+    if (((student_id is begin with '407') or (student_id is begin with '408')) and
         ((student_id is end with 's' or end with 'S') or (student_id is end with 'h' or end with 'H'))):
         # valid ID
     else:
@@ -142,7 +149,7 @@ for each student_id in student_list:
 
 <br><br><br>
 
-<h3>Well... It looks a little more complicated.</h3>
+### Well... It looks a little more complicated now.
 
 ---
 
@@ -164,12 +171,12 @@ Vocabulary
 -->
 
 ---
-layout: cover
+layout: section
 ---
 
-<!-- Add a cover photo -->
-
 # Regex
+
+The life-saver of pattern matching
 
 ---
 
@@ -183,10 +190,25 @@ for each student_id in student_list:
         # invalid ID
 ```
 
-<br><br><br><br>
+<v-clicks>
 
-<!-- Add some meme? -->
+```python
+for each student_id in student_list:
+    if (((student_id is begin with '407') or (student_id is begin with '408')) and
+        ((student_id is end with 's' or end with 'S') or (student_id is end with 'h' or end with 'H'))):
+        # valid ID
+    else:
+        # invalid ID
+```
 
+<div>
+<br><br>
+
+### Which one do you like?
+
+</div>
+
+</v-clicks>
 
 <!-- 
 Vocabulary
