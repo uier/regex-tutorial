@@ -127,7 +127,7 @@ image: /images/trap-card.png
 # Trap Card ACTIVATED!
 
 1. Juinor students (ID begins with '408')
-2. College of techonology and Engineering  
+2. College of Techonology and Engineering  
   (ID ends with 'H' or 'h')
 
 <br><br><br>
@@ -224,7 +224,7 @@ Vocabulary
 
 ---
 
-# What is regex ?
+# What is regex?
 
 - regex is a sequence of characters that specifies a search pattern.
 - regex patterns are commonly used by string-searching algorithms
@@ -314,7 +314,7 @@ layout: center
 class: text-center
 ---
 
-# Normal Search
+# exact match
 
 <demo defaultPattern="" defaultFlags="" defaultText="I have a fat cat called Matt as a pet. It caught a rat." />
 
@@ -342,10 +342,10 @@ layout: center
 class: text-center
 ---
 
-# `[]` Character Class
+# `[]` character class
 Matches any one of the enclosed characters
 
-<demo defaultPattern="" defaultFlags="" defaultText="I have a fat cat called Matt as a pet. It caught a rat that weight 20 grams." />
+<demo defaultPattern="" defaultFlags="g" defaultText="I have a fat cat called Matt as a pet. It caught a rat that weight 20 grams." />
 
 <!-- 
 we can use character class to contain multiple characters
@@ -359,10 +359,10 @@ layout: center
 class: text-center
 ---
 
-# `\` escaped
-##### `\d` match digit, equivalent to `[0-9]`  
-##### `\w` match alphanumeric character, equivalent to `[A-Za-z0-9_]`  
-##### `\s` match white space character
+# `\` escape character
+
+
+\d match digit, \w match alphanumeric character
 
 <demo defaultPattern="\d" defaultFlags="g" :defaultText="'What is 24.0 \ 12.0 = ?\nIt\'s 2.\nCorrect!'" />
 
@@ -387,7 +387,15 @@ class: text-center
 
 # `()` Grouping
 
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
+<demo defaultPattern="407|8470" defaultFlags="g" :defaultText="'40747007s\n40847007S'" />
+
+<!-- 
+\1 match 1st group, \2 match 2nd group
+
+1*1=1 1*2=2 1*3=3
+2*1=2 2*2=4 2*3=6
+3*1=3 3*2=6 3*3=9
+ -->
 
 ---
 layout: center
@@ -395,8 +403,9 @@ class: text-center
 ---
 
 # `?` allow 0 or 1 times
+optional
 
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
+<demo defaultPattern="" defaultFlags="g" :defaultText="'abc.ppt\nabc.pptx\nhe is good\nshe is god'" />
 
 ---
 layout: center
@@ -404,8 +413,9 @@ class: text-center
 ---
 
 # `*` allow 0 or many times
+any number of times
 
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
+<demo defaultPattern="" defaultFlags="g" :defaultText="'hw1_jimmy.pdf\nhw1_bob.pdf\nhw2_alice.pdf\nhw2_bob.docx'" />
 
 ---
 layout: center
@@ -413,8 +423,9 @@ class: text-center
 ---
 
 # `+` allow 1 or many times
+at least one times
 
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
+<demo defaultPattern="@gmail.com" defaultFlags="g" :defaultText="'alice@gmail.com\n@gmail.com'" />
 
 ---
 layout: center
@@ -423,7 +434,7 @@ class: text-center
 
 # `{min, max}` explicit counts
 
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
+<demo defaultPattern="" defaultFlags="g" :defaultText="'pswd\npasswd\npassword\nlong_password'" />
 
 ---
 layout: center
@@ -432,5 +443,45 @@ class: text-center
 
 # `^` negation, do the opposite
 
-<demo defaultPattern="a" defaultFlags="g" defaultText="The quick brown fox jumps over a lazy dog." />
+<demo defaultPattern="[\w]att?" defaultFlags="g" :defaultText="'rat\nMatt\nhat\ncat'" />
+
+
+---
+layout: image
+---
+
+<img src="/images/regex-cheat-sheet.png" class="h-full">
+
+---
+layout: cover
+---
+
+# Challenges
+
+---
+layout: center
+---
+
+# Conquer Part1 and Part2!
+
+#### Good Luck & Have Fun 😄
+
+---
+layout: cover
+---
+
+# How does regex works?
+
+---
+layout: iframe
+url: https://www.youtube.com/embed/qGfPe2g8VOs
+---
+
+---
+layout: center
+---
+
+# Conquer Part3!
+
+---
 

@@ -276,8 +276,8 @@ export default {
     },
     // Copied from: https://stackoverflow.com/questions/5499078/fastest-method-to-escape-html-tags-as-html-entities
     safe_tags_replace(str) {
-      return str
-      // return str.replace(/[&<>]/g, this.replaceTag)
+      return str.replace(/[&<>]/g, this.replaceTag)
+      // return str
     },
     replaceTag(tag) {
       return tagsToReplace[tag] || tag
