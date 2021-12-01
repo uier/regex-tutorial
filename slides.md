@@ -76,7 +76,7 @@ we'll also explain some technical term when needed.
 
 ---
 layout: image-right
-image: ./images/student_list.png
+image: /images/student_list.png
 ---
 
 # Imagine that...
