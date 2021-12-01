@@ -48,6 +48,7 @@ export default {
             isInvalidRegex && 'border-red-500 focus:border-red-500',
           ]"
           type="text"
+          autocomplete="off"
         />
         <label for="pattern" class="absolute left-2 transition-all bg-white px-1"> Pattern </label>
       </div>
@@ -70,6 +71,7 @@ export default {
             transition-all
           "
           type="text"
+          autocomplete="off"
         />
         <label for="flags" class="absolute left-2 transition-all bg-white px-1"> Flags </label>
       </div>
