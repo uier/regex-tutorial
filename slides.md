@@ -86,7 +86,7 @@ image: ./images/student_list.png
 
 <br><br><br><br>
 
-<h3>How will you do that?</h3>
+### How will you do that?
 
 ---
 
@@ -102,10 +102,10 @@ for each student_id in student_list:
 
 <br><br><br>
 
-<h3>Looks really simple, right?</h3>
+### Looks really simple, right?
 
 <!--
-Vocabulary
+Vocabulary  
 
 - pesudo code
   : In computer science, pseudocode is not a programming language, it is not a valid code. but it can describe an algorithm to others. it is just plain desciption which looks like code.  
@@ -121,11 +121,18 @@ layout: statement
 
 ---
 layout: image-right
+image: /images/trap-card.png
 ---
 
-<!-- 右邊要放陷阱卡的圖片 -->
-
 # Trap Card ACTIVATED!
+
+1. Juinor students
+2. College of techonology and Engineering
+
+<br><br><br>
+
+### So..we need to rewrite the code
+
 
 ---
 
@@ -142,7 +149,7 @@ for each student_id in student_list:
 
 <br><br><br>
 
-<h3>Well... It looks a little more complicated.</h3>
+### Well... It looks a little more complicated now.
 
 ---
 
@@ -175,6 +182,8 @@ layout: cover
 
 # Refactor with regex
 
+<v-clicks>
+
 ```python
 for each student_id in student_list:
     if match student_id with "40[78].*[sh]/i":
@@ -183,10 +192,23 @@ for each student_id in student_list:
         # invalid ID
 ```
 
-<br><br><br><br>
+```python
+for each student_id in student_list:
+    if ((student_id is begin with '407') or (student_id is begin with '408') and
+        ((student_id is end with 's' or end with 'S') or (student_id is end with 'h' or end with 'H'))):
+        # valid ID
+    else:
+        # invalid ID
+```
 
-<!-- Add some meme? -->
+<div>
+<br><br>
 
+### Which one do you like?
+
+</div>
+
+</v-clicks>
 
 <!-- 
 Vocabulary
