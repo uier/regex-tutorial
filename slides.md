@@ -76,7 +76,7 @@ we'll also explain some technical term when needed.
 
 ---
 layout: image-right
-image: /images/student_list.png
+image: /student_list.png
 ---
 
 # Imagine that...
@@ -121,7 +121,7 @@ layout: statement
 
 ---
 layout: image-right
-image: /images/trap-card.png
+image: /trap-card.png
 ---
 
 # Trap Card ACTIVATED!
@@ -234,8 +234,8 @@ Vocabulary
 
 
 <div class="flex space-x-5 mt-20">
-  <img src="/images/regex-example-1.png" class="w-1/2">
-  <img src="/images/regex-example-2.png" class="w-1/2">
+  <img src="/regex-example-1.png" class="w-1/2">
+  <img src="/regex-example-2.png" class="w-1/2">
 </div>
 
 ---
@@ -244,26 +244,26 @@ Vocabulary
 
 <div class="flex justify-around mt-20">
   <div class="flex flex-col items-center space-y-3">
-    <img src="/images/icon_msword.png" class="w-20">
+    <img src="/icon_msword.png" class="w-20">
     <div class="text-xl">MS Word</div>
   </div>
   <div class="flex flex-col items-center space-y-3">
-    <img src="/images/icon_msexcel.png" class="w-20">
+    <img src="/icon_msexcel.png" class="w-20">
     <div class="text-xl">MS Excel</div>
   </div>
 </div>
 
 <div class="flex justify-around mt-20">
   <div class="flex flex-col items-center space-y-3">
-    <img src="/images/icon_googledoc.png" class="w-20">
+    <img src="/icon_googledoc.png" class="w-20">
     <div class="text-xl">Google Docs</div>
   </div>
   <div class="flex flex-col items-center space-y-3">
-    <img src="/images/icon_googlesheet.png" class="w-20">
+    <img src="/icon_googlesheet.png" class="w-20">
     <div class="text-xl">Google Sheets</div>
   </div>
   <div class="flex flex-col items-center space-y-3">
-    <img src="/images/icon_googleform.png" class="w-20">
+    <img src="/icon_googleform.png" class="w-20">
     <div class="text-xl">Google Form</div>
   </div>
 </div>
@@ -273,7 +273,7 @@ Vocabulary
 
 ---
 layout: image-right
-image: /images/regex-coolguy.png
+image: /regex-coolguy.png
 ---
 
 # Why must be regex?
@@ -450,7 +450,7 @@ class: text-center
 layout: image
 ---
 
-<img src="/images/regex-cheat-sheet.png" class="h-full">
+<img src="/regex-cheat-sheet.png" class="h-full">
 
 ---
 layout: cover
