@@ -28,7 +28,7 @@ In this presentation, we're going to introduce A VERY VERY COOL thing, REGULAR E
 
 ---
 
-# Vocabulary in article
+# Vocabulary in the article
 
 <br>
 
@@ -90,7 +90,7 @@ image: /student_list.png
 
 ---
 
-# Pesudo code
+# Pseudo code
 
 ```python
 for each student_id in student_list:
@@ -104,13 +104,25 @@ for each student_id in student_list:
 
 ### Looks really simple, right?
 
+<v-click>
+
+<br>
+<hr>
+<br>
+
+### pseudo code
+It is just a plain desciption of algorithm which looks like code.  
+e.g. The python code has 87% similarity of the pseudo code.
+
+</v-click>
+
 <!--
 Vocabulary  
 
-- pesudo code
+- pseudo code
   : In computer science, pseudocode is not a programming language, it is not a valid code. but it can describe an algorithm to others. it is just plain desciption which looks like code.  
   example:
-    The python code has 87% similarity of the pesudo code.
+    The python code has 87% similarity of the pseudo code.
 -->
 
 ---
@@ -202,13 +214,24 @@ for each student_id in student_list:
 ```
 
 <div>
-<br><br>
 
-### Which one do you like?
+#### Which one do you like?
 
 </div>
 
 </v-clicks>
+
+
+<v-click>
+
+<hr>
+<br>
+
+### refactor
+(verb) restructure the source code of an application or piece of software so as to improve operation without altering functionality.    
+e.g. Sometimes, developers prefer to rewrite from scratch rather than refactor legacy code because they cannot even understand what they just wrote 3 days ago.
+
+</v-click>
 
 <!-- 
 Vocabulary
@@ -233,8 +256,11 @@ Vocabulary
 	- input validation. 
 
 
-<div class="flex space-x-5 mt-20">
-  <img src="/regex-example-1.png" class="w-1/2">
+<div class="flex space-x-5 mt-16">
+  <div class="flex flex-col w-1/2">
+    <span class="font-mono self-end text-gray-800">/40[78].*[sh]/gi</span>
+    <img src="/regex-example-1.png" class="w-full">
+  </div>
   <img src="/regex-example-2.png" class="w-1/2">
 </div>
 
@@ -328,9 +354,9 @@ class: text-center
 ---
 
 # `.` dot
-Matches any single character.
+Match any single character.
 
-<demo defaultPattern="cap" defaultFlags="g" defaultText="I have a cap and a cup." />
+<demo defaultPattern="cap" defaultFlags="g" :defaultText="'I have a cap and a cup.\nI have a fat cat called Matt as a pet. It caught a rat.'" />
 
 <!-- 
 then we can use dot to match any single character.
@@ -343,7 +369,7 @@ class: text-center
 ---
 
 # `[]` character class
-Matches any one of the enclosed characters
+Match any one of the enclosed characters
 
 <demo defaultPattern="" defaultFlags="g" defaultText="I have a fat cat called Matt as a pet. It caught a rat that weight 20 grams." />
 
@@ -362,13 +388,16 @@ class: text-center
 # `\` escape character
 
 
-\d match digit, \w match alphanumeric character
+**\d** match digit, **\w** match alphanumeric character  
+**\s** match whitespace, **\b** match boundary
 
 <demo defaultPattern="\d" defaultFlags="g" :defaultText="'What is 24.0 \ 12.0 = ?\nIt\'s 2.\nCorrect!'" />
 
 <!-- 
 back slash means escape, what escape means is that the character after back slash is escaping from the original meaning
 for example, another way to match a dot is using escape \.
+
+apple not apples
  -->
 
 ---
