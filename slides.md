@@ -419,6 +419,11 @@ class: text-center
 <demo defaultPattern="407|8470" defaultFlags="g" :defaultText="'40747007s\n40847007S'" />
 
 <!-- 
+two usages
+
+1. prior
+2. capture
+
 \1 match 1st group, \2 match 2nd group
 
 1*1=1 1*2=2 1*3=3
